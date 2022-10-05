@@ -39,7 +39,7 @@ version = "*"
 features = ["extension-module", "hashbrown", "num-bigint", "num-complex", "indexmap"]
 
 [dependencies.hashbrown]
-version = "0.11"
+version = "*"
 features = ["rayon"]
 
 [dependencies.ndarray]
