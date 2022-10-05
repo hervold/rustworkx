@@ -57,7 +57,7 @@ use traversal::*;
 use tree::*;
 use union::*;
 
-use hashbrown::HashMap;
+use std::collections::HashMap;
 use indexmap::map::Entry::{Occupied, Vacant};
 use num_complex::Complex64;
 

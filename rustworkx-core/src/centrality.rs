@@ -14,7 +14,7 @@ use std::collections::VecDeque;
 use std::hash::Hash;
 use std::sync::RwLock;
 
-use hashbrown::HashMap;
+use std::collections::HashMap;
 use petgraph::visit::{
     EdgeRef,
     GraphBase,

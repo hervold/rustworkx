@@ -12,7 +12,7 @@
 
 use std::cmp::Ordering;
 
-use hashbrown::{HashMap, HashSet};
+use std::collections::{HashMap, HashSet};
 use rayon::prelude::*;
 
 use pyo3::exceptions::PyValueError;

@@ -12,7 +12,7 @@
 
 use std::iter::Iterator;
 
-use hashbrown::HashSet;
+use std::collections::HashSet;
 
 use petgraph::EdgeType;
 

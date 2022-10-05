@@ -12,9 +12,9 @@
 
 use std::ops::Index;
 
-use hashbrown::{HashMap, HashSet};
+use std::collections::{HashMap, HashSet};
 
-use ndarray::prelude::*;
+use numpy::ndarray::prelude::*;
 use petgraph::prelude::*;
 use petgraph::EdgeType;
 use rayon::prelude::*;
@@ -106,7 +106,6 @@ pub fn compute_distance_matrix<Ty: EdgeType + Sync>(
         // Parallelize by row and iterate from each row index in BFS order
         matrix
             .axis_iter_mut(Axis(0))
-            .into_par_iter()
             .enumerate()
             .for_each(|(index, row)| bfs_traversal(index, row));
     }

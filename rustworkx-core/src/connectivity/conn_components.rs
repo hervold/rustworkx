@@ -10,7 +10,7 @@
 // License for the specific language governing permissions and limitations
 // under the License.
 
-use hashbrown::HashSet;
+use std::collections::HashSet;
 use std::collections::VecDeque;
 use std::hash::Hash;
 
@@ -31,7 +31,7 @@ use petgraph::{Incoming, Outgoing};
 /// # Example
 /// ```rust
 /// use std::iter::FromIterator;
-/// use hashbrown::HashSet;
+/// use std::collections::HashSet;
 /// use petgraph::graph::Graph;
 /// use petgraph::graph::node_index as ndx;
 /// use petgraph::visit::Visitable;
@@ -88,7 +88,7 @@ where
 /// # Example
 /// ```rust
 /// use std::iter::FromIterator;
-/// use hashbrown::HashSet;
+/// use std::collections::HashSet;
 /// use petgraph::graph::Graph;
 /// use petgraph::graph::NodeIndex;
 /// use petgraph::{Undirected, Directed};
@@ -167,7 +167,7 @@ where
 
 #[cfg(test)]
 mod test_conn_components {
-    use hashbrown::HashSet;
+    use std::collections::HashSet;
     use petgraph::graph::node_index as ndx;
     use petgraph::graph::{Graph, NodeIndex};
     use petgraph::visit::Visitable;

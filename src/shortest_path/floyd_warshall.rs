@@ -10,7 +10,7 @@
 // License for the specific language governing permissions and limitations
 // under the License.
 
-use hashbrown::HashMap;
+use std::collections::HashMap;
 use rustworkx_core::dictmap::*;
 
 use crate::{get_edge_iter_with_weights, weight_callable};
@@ -22,11 +22,14 @@ use petgraph::prelude::*;
 use petgraph::visit::{IntoEdgeReferences, NodeIndexable};
 use petgraph::EdgeType;
 
-use ndarray::prelude::*;
+use numpy::ndarray::prelude::*;
 use rayon::prelude::*;
 
 use crate::iterators::{AllPairsPathLengthMapping, PathLengthMapping};
 use crate::StablePyGraph;
+
+use numpy::ndarray::Array2;
+use numpy::ndarray::Axis;
 
 pub fn floyd_warshall<Ty: EdgeType>(
     py: Python,
@@ -184,7 +187,6 @@ pub fn floyd_warshall_numpy<Ty: EdgeType>(
         for k in 0..n {
             let row_k = mat.slice(s![k, ..]).to_owned();
             mat.axis_iter_mut(Axis(0))
-                .into_par_iter()
                 .for_each(|mut row_i| {
                     let m_ik = row_i[k];
                     row_i.iter_mut().zip(row_k.iter()).for_each(|(m_ij, m_kj)| {

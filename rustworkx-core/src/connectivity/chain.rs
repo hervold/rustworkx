@@ -13,7 +13,7 @@
 use std::cmp::Eq;
 use std::hash::Hash;
 
-use hashbrown::HashMap;
+use std::collections::HashMap;
 
 use petgraph::visit::{
     GraphProp, IntoEdges, IntoNodeIdentifiers, NodeCount, NodeIndexable, VisitMap, Visitable,

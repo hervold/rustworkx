@@ -10,7 +10,7 @@
 // License for the specific language governing permissions and limitations
 // under the License.
 
-use hashbrown::{HashMap, HashSet};
+use std::collections::{HashMap, HashSet};
 use rustworkx_core::dictmap::*;
 
 use pyo3::prelude::*;

@@ -20,7 +20,7 @@ mod spring;
 use crate::{digraph, graph};
 use spring::Point;
 
-use hashbrown::{HashMap, HashSet};
+use std::collections::{HashMap, HashSet};
 
 use pyo3::prelude::*;
 use pyo3::Python;

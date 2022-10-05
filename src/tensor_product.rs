@@ -13,7 +13,7 @@
 use crate::iterators::ProductNodeMap;
 use crate::{digraph, graph, StablePyGraph};
 
-use hashbrown::HashMap;
+use std::collections::HashMap;
 
 use petgraph::visit::{EdgeRef, IntoEdgeReferences};
 use petgraph::{algo, EdgeType};

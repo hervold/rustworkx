@@ -21,7 +21,7 @@ use std::hash::Hash;
 use petgraph::graph::IndexType;
 
 use crate::dictmap::*;
-use hashbrown::HashMap;
+use std::collections::HashMap;
 
 /// A mapping for storing the distances of nodes for shortest path algorithms.
 pub trait DistanceMap<K, V> {

@@ -12,7 +12,7 @@
 
 use std::hash::Hash;
 
-use hashbrown::{HashMap, HashSet};
+use std::collections::{HashMap, HashSet};
 
 use petgraph::visit::{
     EdgeCount, IntoNeighbors, IntoNodeIdentifiers, NodeCount, NodeIndexable, Visitable,

@@ -12,8 +12,8 @@
 
 use crate::digraph::PyDiGraph;
 
-use hashbrown::hash_map::Entry;
-use hashbrown::HashMap;
+use std::collections::hash_map::Entry;
+use std::collections::HashMap;
 
 use pyo3::exceptions::PyValueError;
 use pyo3::prelude::*;

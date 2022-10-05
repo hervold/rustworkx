@@ -15,7 +15,7 @@ use crate::weight_callable;
 
 use std::iter::Iterator;
 
-use hashbrown::{HashMap, HashSet};
+use std::collections::{HashMap, HashSet};
 
 use pyo3::exceptions::PyValueError;
 use pyo3::prelude::*;

@@ -19,7 +19,7 @@ use std::io::prelude::*;
 use std::io::{BufReader, BufWriter};
 use std::str;
 
-use hashbrown::{HashMap, HashSet};
+use std::collections::{HashMap, HashSet};
 use indexmap::IndexSet;
 use rustworkx_core::dictmap::*;
 
@@ -30,7 +30,7 @@ use pyo3::types::{PyBool, PyDict, PyList, PyLong, PyString, PyTuple};
 use pyo3::PyTraverseError;
 use pyo3::Python;
 
-use ndarray::prelude::*;
+use numpy::ndarray::prelude::*;
 use num_complex::Complex64;
 use num_traits::Zero;
 use numpy::PyReadonlyArray2;
@@ -48,6 +48,8 @@ use petgraph::prelude::*;
 use petgraph::visit::{
     GraphBase, IntoEdgeReferences, IntoNodeReferences, NodeCount, NodeFiltered, NodeIndexable,
 };
+
+use numpy::ndarray::Axis;
 
 /// A class for creating undirected graphs
 ///

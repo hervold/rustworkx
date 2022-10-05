@@ -13,7 +13,7 @@
 use crate::graph;
 use rustworkx_core::max_weight_matching as mwm;
 
-use hashbrown::HashSet;
+use std::collections::HashSet;
 
 use pyo3::prelude::*;
 use pyo3::Python;

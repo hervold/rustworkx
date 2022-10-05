@@ -14,7 +14,7 @@ use std::cmp::Ordering;
 use std::hash::Hash;
 use std::vec::IntoIter;
 
-use hashbrown::{hash_map::Entry, HashMap};
+use std::collections::{hash_map::Entry, HashMap};
 use petgraph::{
     visit::{
         EdgeCount, EdgeRef, GraphBase, GraphProp, IntoEdges, IntoNodeIdentifiers, NodeCount,

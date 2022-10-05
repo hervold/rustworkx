@@ -12,7 +12,7 @@
 
 mod longest_path;
 
-use hashbrown::{HashMap, HashSet};
+use std::collections::{HashMap, HashSet};
 use std::cmp::Ordering;
 use std::collections::BinaryHeap;
 

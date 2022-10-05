@@ -19,7 +19,7 @@ use std::num::{ParseFloatError, ParseIntError};
 use std::path::Path;
 use std::str::ParseBoolError;
 
-use hashbrown::HashMap;
+use std::collections::HashMap;
 use indexmap::IndexMap;
 
 use quick_xml::events::{BytesStart, Event};

@@ -10,7 +10,7 @@
 // License for the specific language governing permissions and limitations
 // under the License.
 
-use hashbrown::HashMap;
+use std::collections::HashMap;
 
 use rustworkx_core::dictmap::*;
 use rustworkx_core::shortest_path::dijkstra;

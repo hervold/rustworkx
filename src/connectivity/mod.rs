@@ -21,7 +21,7 @@ use super::{
     InvalidNode, NullGraph,
 };
 
-use hashbrown::{HashMap, HashSet};
+use std::collections::{HashMap, HashSet};
 
 use pyo3::exceptions::PyValueError;
 use pyo3::prelude::*;
@@ -32,7 +32,7 @@ use petgraph::stable_graph::NodeIndex;
 use petgraph::unionfind::UnionFind;
 use petgraph::visit::{EdgeRef, IntoEdgeReferences, NodeCount, NodeIndexable, Visitable};
 
-use ndarray::prelude::*;
+use numpy::ndarray::prelude::*;
 use numpy::IntoPyArray;
 
 use crate::iterators::{AllPairsMultiplePathMapping, BiconnectedComponents, Chains, EdgeList};

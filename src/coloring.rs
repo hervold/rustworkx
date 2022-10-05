@@ -13,7 +13,7 @@
 use crate::graph;
 use rustworkx_core::dictmap::*;
 
-use hashbrown::{HashMap, HashSet};
+use std::collections::{HashMap, HashSet};
 use std::cmp::Reverse;
 
 use pyo3::prelude::*;

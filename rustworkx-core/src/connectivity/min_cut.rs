@@ -10,7 +10,7 @@
 // License for the specific language governing permissions and limitations
 // under the License.
 
-use hashbrown::HashMap;
+use std::collections::HashMap;
 use num_traits::Zero;
 use std::{hash::Hash, ops::AddAssign};
 

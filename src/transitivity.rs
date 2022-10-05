@@ -11,7 +11,7 @@
 // under the License.
 
 use super::{digraph, graph};
-use hashbrown::HashSet;
+use std::collections::HashSet;
 
 use pyo3::prelude::*;
 

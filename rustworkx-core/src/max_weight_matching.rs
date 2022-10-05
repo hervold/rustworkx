@@ -21,7 +21,7 @@ use std::cmp::max;
 use std::hash::Hash;
 use std::mem;
 
-use hashbrown::{HashMap, HashSet};
+use std::collections::{HashMap, HashSet};
 
 use petgraph::visit::{
     EdgeCount, EdgeRef, GraphBase, GraphProp, IntoEdges, IntoNodeIdentifiers, NodeCount,
@@ -835,7 +835,7 @@ fn verify_optimum(
 /// use rustworkx_core::max_weight_matching::max_weight_matching;
 /// use rustworkx_core::Result;
 ///
-/// use hashbrown::HashSet;
+/// use std::collections::HashSet;
 ///
 /// // Create a path graph
 /// let g = petgraph::graph::UnGraph::<i32, i128>::from_edges(&[

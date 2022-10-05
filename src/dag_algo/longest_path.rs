@@ -12,7 +12,7 @@
 
 use crate::{digraph, DAGHasCycle};
 
-use hashbrown::HashMap;
+use std::collections::HashMap;
 
 use pyo3::prelude::*;
 

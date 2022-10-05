@@ -10,7 +10,7 @@
 // License for the specific language governing permissions and limitations
 // under the License.
 
-use hashbrown::{HashMap, HashSet};
+use std::collections::{HashMap, HashSet};
 use std::hash::Hash;
 
 use petgraph::{
@@ -57,7 +57,7 @@ fn is_root(parent: &[usize], u: usize) -> bool {
 /// # Example:
 /// ```rust
 /// use std::iter::FromIterator;
-/// use hashbrown::{HashMap, HashSet};
+/// use std::collections::{HashMap, HashSet};
 ///
 /// use rustworkx_core::connectivity::articulation_points;
 /// use rustworkx_core::petgraph::graph::UnGraph;
@@ -186,7 +186,7 @@ where
 #[cfg(test)]
 mod tests {
     use crate::connectivity::articulation_points;
-    use hashbrown::{HashMap, HashSet};
+    use std::collections::{HashMap, HashSet};
     use petgraph::graph::node_index as nx;
     use petgraph::prelude::*;
     use std::iter::FromIterator;

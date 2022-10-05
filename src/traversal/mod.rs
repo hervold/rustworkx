@@ -26,7 +26,7 @@ use super::{digraph, graph, iterators, CostFn};
 
 use std::convert::TryFrom;
 
-use hashbrown::HashSet;
+use std::collections::HashSet;
 
 use pyo3::prelude::*;
 use pyo3::Python;

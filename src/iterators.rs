@@ -44,7 +44,7 @@ use std::hash::Hasher;
 use num_bigint::BigUint;
 use rustworkx_core::dictmap::*;
 
-use ndarray::prelude::*;
+use numpy::ndarray::prelude::*;
 use numpy::{IntoPyArray, PyArrayDescr};
 use pyo3::class::iter::IterNextOutput;
 use pyo3::exceptions::{PyIndexError, PyKeyError, PyNotImplementedError};
@@ -52,6 +52,8 @@ use pyo3::gc::PyVisit;
 use pyo3::prelude::*;
 use pyo3::types::PySlice;
 use pyo3::PyTraverseError;
+
+use numpy::ndarray::Array2;
 
 macro_rules! last_type {
      ($a:ident,) => { $a };

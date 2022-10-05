@@ -50,7 +50,7 @@ use crate::min_scored::MinScored;
 /// use rustworkx_core::petgraph;
 /// use rustworkx_core::petgraph::graph::NodeIndex;
 /// use rustworkx_core::shortest_path::k_shortest_path;
-/// use hashbrown::HashMap;
+/// use std::collections::HashMap;
 /// use rustworkx_core::Result;
 ///
 /// let g = petgraph::graph::UnGraph::<i32, _>::from_edges(&[
@@ -123,7 +123,7 @@ where
 
 #[cfg(test)]
 mod tests {
-    use hashbrown::HashMap;
+    use std::collections::HashMap;
 
     use crate::shortest_path::k_shortest_path;
     use crate::Result;

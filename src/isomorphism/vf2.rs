@@ -19,7 +19,7 @@ use std::cmp::{Ordering, Reverse};
 use std::iter::Iterator;
 use std::marker;
 
-use hashbrown::HashMap;
+use std::collections::HashMap;
 use rustworkx_core::dictmap::*;
 
 use pyo3::class::iter::IterNextOutput;

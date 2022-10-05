@@ -17,7 +17,7 @@
 // to add support for returning all simple paths to a list of targets instead
 // of just between a single node pair.
 
-use hashbrown::HashSet;
+use std::collections::HashSet;
 use indexmap::map::Entry;
 use indexmap::IndexSet;
 use petgraph::visit::{IntoNeighborsDirected, NodeCount};
@@ -35,7 +35,7 @@ use crate::dictmap::*;
 /// # Example
 /// ```
 /// use petgraph::prelude::*;
-/// use hashbrown::HashSet;
+/// use std::collections::HashSet;
 /// use rustworkx_core::connectivity::all_simple_paths_multiple_targets;
 ///
 /// let mut graph = DiGraph::<&str, i32>::new();
@@ -139,7 +139,7 @@ where
 #[cfg(test)]
 mod tests {
     use crate::connectivity::all_simple_paths_multiple_targets;
-    use hashbrown::HashSet;
+    use std::collections::HashSet;
     use petgraph::prelude::*;
 
     #[test]
