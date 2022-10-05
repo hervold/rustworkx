@@ -43,11 +43,11 @@ version = "*"
 features = ["rayon"]
 
 [dependencies.ndarray]
-version = "^0.13.1"
+version = "*"
 features = ["rayon"]
 
 [dependencies.indexmap]
-version = "1.7"
+version = "*"
 features = ["rayon"]
 
 [profile.release]
